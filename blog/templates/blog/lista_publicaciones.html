@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Publicaciones</title>
+</head>
+<body>
+    <h1>Publicaciones</h1>
+    <!-- Enlace para crear una nueva publicación -->
+    <a href="/crear/">Crear nueva publicación</a>
+    <ul>
+        {% for publicacion in publicaciones %}
+            <li>
+                <!-- Enlace hacia la vista detallada de la publicación -->
+                <a href="{{ publicacion.id }}/">{{ publicacion.titulo }}</a>
+                <p>{{ publicacion.fecha_publicacion }}</p>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+
+

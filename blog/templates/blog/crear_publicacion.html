@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crear Nueva Publicación</title>
+</head>
+<body>
+    <h1>Crear Nueva Publicación</h1>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Crear Publicación</button>
+    </form>
+    <br>
+    <!-- Enlace para regresar a la lista de publicaciones -->
+    <a href="/">Volver a la lista de publicaciones</a>
+</body>
+</html>
