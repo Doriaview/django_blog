@@ -15,6 +15,14 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+# settings.py
+
+STATIC_URL = '/static/'
+
+# Esta configuración solo es necesaria en desarrollo
+STATICFILES_DIRS = [
+    BASE_DIR / "blog" / "static",  # Ruta a la carpeta static dentro de tu app blog
+]
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/

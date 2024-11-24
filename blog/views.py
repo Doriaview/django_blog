@@ -22,5 +22,3 @@ def crear_publicacion(request):
     else:
         form = PublicacionForm()
     return render(request, 'blog/crear_publicacion.html', {'form': form})
-
-# Create your views here.
